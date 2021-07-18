@@ -2,4 +2,4 @@
 
 
 
-<img src="./assets/screenshot/screenshot-bg/ >
+<img src="./assets/screenshot/screenshot-bg.png" />
