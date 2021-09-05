@@ -82,16 +82,14 @@ function compare(event) {
     
         if (element.textContent == questions[questionIndex].answer) {
             score++;
-            createDiv.textContent = "Correct! The answer is:  " + questions[questionIndex].answer;
+            createDiv.textContent = "Correct!";
         } else {
             secondsLeft = secondsLeft - penalty;
-            createDiv.textContent = "Wrong! The correct answer is:  " + questions[questionIndex].answer;
+            createDiv.textContent = "Wrong!";
         }
-
     }
  
     questionIndex++;
-
     if (questionIndex >= questions.length) {
         quizComplete();
         createDiv.textContent = "Finished!" + " " + "You got  " + score + "/" + questions.length + " correct.";
@@ -99,7 +97,6 @@ function compare(event) {
         render(questionIndex);
     }
     questionsDiv.appendChild(createDiv);
-
 }
 
 function quizComplete() {
